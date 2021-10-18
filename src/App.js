@@ -27,7 +27,9 @@ function App() {
       <div className="container">
         {data.response.results.map((item) => (
           <div className="item">
-            <img className="image" src={item.data.image_url} />
+            <div className="frame">
+              <img className="image" src={item.data.image_url} />
+            </div>
 
             <div className="name">
               {item.value}
